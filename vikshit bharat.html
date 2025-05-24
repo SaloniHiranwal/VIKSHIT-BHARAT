@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viksit Bharat - Developed India 2047</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a4e96;
+      --accent: #ff9933;
+      --green: #138808;
+      --white: #fff;
+      --gray: #f4f4f4;
+    }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: var(--gray);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--green));
+      color: var(--white);
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.7rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+    }
+    nav a.active, nav a:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 2rem;
+    }
+    section {
+      display: none;
+      animation: fadeIn 0.5s;
+    }
+    section.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    h1, h2 {
+      color: var(--primary);
+    }
+    .img-banner {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      max-height: 320px;
+      object-fit: cover;
+    }
+    .card-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      flex: 1 1 250px;
+      background: var(--gray);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 1rem;
+      min-width: 220px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 0.7rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    button {
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: var(--green);
+    }
+    @media (max-width: 700px) {
+      .container {padding: 1rem;}
+      .card-group {flex-direction: column;}
+      nav {gap: 0.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Viksit Bharat 2047</h1>
+    <p>Towards a Developed India</p>
+  </header>
+  <nav>
+    <a href="#" class="active" data-section="home">Home</a>
+    <a href="#" data-section="about">About the Theme</a>
+    <a href="#" data-section="startup">New Startup</a>
+    <a href="#" data-section="technologies">New Technologies</a>
+    <a href="#" data-section="defence">Indian Defence System</a>
+    <a href="#" data-section="contact">Contact Us</a>
+  </nav>
+  <div class="container">
+    <section id="home" class="active">
+      <img src="https://img.freepik.com/free-photo/indian-flag-waving-wind_1150-11125.jpg" alt="Viksit Bharat Banner" class="img-banner">
+      <h2>Welcome to Viksit Bharat</h2>
+      <p>
+        <b>Viksit Bharat 2047</b> is the vision to transform India into a developed nation by the 100th year of independence. The mission focuses on economic growth, innovation, sustainability, and empowering every citizen to reach their potential[4][5].
+      </p>
+    </section>
+    <section id="about">
+      <h2>About the Theme</h2>
+      <img src="https://gecdesigns.com/uploads/products/independence-day-2024-viksit-bharat-theme-sr14082413.jpg" alt="Viksit Bharat Theme" class="img-banner">
+      <p>
+        <b>Viksit Bharat</b> means "Developed India". The government’s initiative aims to achieve all-round development by 2047, empowering people, fostering innovation, and ensuring prosperity, sustainability, and good governance for all[4][5].
+      </p>
+      <ul>
+        <li>Economic prosperity and self-reliance</li>
+        <li>Modern infrastructure and digital empowerment</li>
+        <li>Environmental sustainability</li>
+        <li>Social progress and inclusive growth</li>
+        <li>Strong governance and global leadership</li>
+      </ul>
+    </section>
+    <section id="startup">
+      <h2>New Startup</h2>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/indian-entrepreneur-startup_53876-146095.jpg" alt="Startup">
+          <h3>Innovative Startups</h3>
+          <p>
+            India is witnessing a boom in startups across sectors like fintech, healthtech, agritech, and edtech. Young entrepreneurs are driving change with technology and creativity, contributing to the vision of a developed India.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/business-team-working-office_53876-146084.jpg" alt="Startup Team">
+          <h3>Support Ecosystem</h3>
+          <p>
+            Government initiatives like Startup India, Atal Innovation Mission, and Make in India are fostering a robust ecosystem for startups, providing funding, mentorship, and global market access.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="technologies">
+      <h2>New Technologies</h2>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/ai-chip-circuit-future-technology-innovation_53876-129749.jpg" alt="AI Technology">
+          <h3>Artificial Intelligence</h3>
+          <p>
+            AI is revolutionizing sectors like healthcare, agriculture, and manufacturing, making processes smarter, faster, and more efficient.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/solar-panel-field-sunset_53876-138786.jpg" alt="Green Tech">
+          <h3>Green Technologies</h3>
+          <p>
+            Renewable energy, electric vehicles, and sustainable practices are at the core of India's commitment to environmental sustainability and a cleaner future.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/rocket-launching-night-sky_53876-146085.jpg" alt="Space Tech">
+          <h3>Space & Defence Tech</h3>
+          <p>
+            ISRO and DRDO are making India a global leader in space exploration and defence technologies, supporting national security and scientific advancement.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="defence">
+      <h2>Indian Defence System</h2>
+      <img src="https://img.freepik.com/free-photo/indian-army-tanks-parade_53876-146087.jpg" alt="Indian Defence" class="img-banner">
+      <ul>
+        <li><b>Modernization:</b> India is rapidly modernizing its defence forces with advanced technology, indigenous weapon systems, and cyber capabilities.</li>
+        <li><b>Make in India:</b> Major focus on indigenous manufacturing through projects like Tejas fighter jets, Arjun tanks, and BrahMos missiles.</li>
+        <li><b>Global Peace:</b> India is a key contributor to UN peacekeeping missions and maintains a strong, responsible defence posture.</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <div id="formMsg" style="margin-top:1rem;"></div>
+      </form>
+    </section>
+  </div>
+  <script>
+    // Navigation logic
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        const sectionId = this.getAttribute('data-section');
+        sections.forEach(sec => {
+          sec.classList.toggle('active', sec.id === sectionId);
+        });
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+    });
+
+    // Contact form logic
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formMsg').textContent = "Thank you for reaching out! We'll get back to you soon.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
